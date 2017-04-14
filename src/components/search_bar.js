@@ -12,8 +12,8 @@ class SearchBar extends Component {  // ES6 classes based React component
             <div>
                 <input
                     value={this.state.term} // 'controlled component' - new value re-rendered when state updated
-                    onChange={event => this.setState({ term: event.target.value })}  //ES6 arrow func tidys up
-                />  
+                    onChange={event => this.setState({ term: event.target.value })}  //ES6 arrow func tidys up 
+                />
             </div>
         )  // javascript variables in JSX enclosed in {}
     }
