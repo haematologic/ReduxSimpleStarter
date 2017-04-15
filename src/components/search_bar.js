@@ -22,6 +22,7 @@ class SearchBar extends Component {  // ES6 classes based React component
     onInputChange(term) {
         this.setState({term});
         this.props.onSearchTermChange(term);
+        // console.log(term)
     }
 }
 

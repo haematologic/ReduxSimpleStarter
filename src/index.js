@@ -12,7 +12,7 @@ class App extends Component {
     constructor(props) { // constructor always called with props
         super(props);
 
-        this.state = { 
+        this.state = {  // component level state (App)
             videos: [],
             selectedVideo: null
         };  // array of objects
