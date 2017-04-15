@@ -7,7 +7,11 @@ export default function(state = null, action) {  // reducers are always called w
     switch(action.type) {
     case 'BOOK_SELECTED':
         return action.payload;  // Don't do: state.title = book.title. Always want to return a fresh object.
-    }
+    }  // redux manages app state. State is single plain JS object.
 
     return state  // but initial will be undefined, not allowed, so needs default of null (ES6 syntax)
 }
+
+// redux throws though other under the hood default actions,
+// so the null state of this reducer will be sent to book-detail before we change the 'active book'
+// need to detect action.type = init?

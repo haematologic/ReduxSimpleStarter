@@ -4,7 +4,7 @@ import ActiveBook from './reducer_active_book';
 
 const rootReducer = combineReducers({  // tells Redux how to create application state
   books: BooksReducer,  // key: reducer
-  activeBook: ActiveBook  // new application state
+  activeBook: ActiveBook  // new application state created by ActiveBook, available as state.activeBook
 });
 
 export default rootReducer;
